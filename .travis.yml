@@ -1,11 +1,11 @@
 language: java
 before_install:
-- git clone --depth=50 --branch=master https://github.com/informatici/openhospital-core.git informatici/openhospital-core
-- cd informatici/openhospital-core
-- mvn clean install -DskipTests
 - sudo service mysql stop
 - docker-compose up -d
-- docker ps
+- git clone --depth=50 --branch=master https://github.com/informatici/openhospital-core.git informatici/openhospital-core
+- cd informatici/openhospital-core
+- mvn clean install # -DskipTests
+# - docker ps
 install: true
 script: mvn clean package -DskipTests=true
 after_success:
