@@ -1,7 +1,7 @@
 language: java
 before_install:
 - git clone --depth=50 --branch=master https://github.com/informatici/openhospital-core.git informatici/openhospital-core
-- cd informatici/openhospita-core
+- cd informatici/openhospital-core
 - mvm clean install
 - sudo service mysql stop
 - docker-compose up -d
