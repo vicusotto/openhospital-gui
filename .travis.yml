@@ -1,3 +1,7 @@
+###############################
+# For testing remove comments #
+# and set -DskipTests=false   #
+###############################
 language: java
 before_install:
 # - sudo service mysql stop
@@ -8,4 +12,4 @@ before_install:
 install: true
 script: mvn clean package -DskipTests=true
 after_success:
-- docker-compose down
+# - docker-compose down
