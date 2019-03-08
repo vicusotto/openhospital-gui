@@ -1,6 +1,6 @@
 language: java
 before_install:
-- clone https://github.com/informatici/openhospital-core.git
+- git clone https://github.com/informatici/openhospital-core.git
 - cd openhospita-core
 - mvm clean install
 - sudo service mysql stop
