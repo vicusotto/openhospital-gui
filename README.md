@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/informatici/openhospital-gui.svg?branch=master)](https://travis-ci.org/informatici/openhospital-gui)
 # OpenHospital-gui
-* docker from [pviotti](https://hub.docker.com/r/pviotti/openhospital) must be available
+* docker from [pviotti](https://hub.docker.com/r/pviotti/openhospital) must be available on DockerHub
 
 **With docker compose**
 
@@ -12,9 +12,8 @@ Simply run:
 
 Before running `docker-compose up`...
 
-Install and start [Xming Server](https://sourceforge.net/projects/xming/)
-Edit docker-compose.yml with `DISPLAY = <host_ip>:0` 
-
+1. Install and start [Xming Server](https://sourceforge.net/projects/xming/)
+2. Edit docker-compose.yml with `DISPLAY = <host_ip>:0`
 
 **Other info**
 
