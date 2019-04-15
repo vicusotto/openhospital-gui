@@ -1,37 +1,20 @@
 [![Build Status](https://travis-ci.org/informatici/openhospital-gui.svg?branch=master)](https://travis-ci.org/informatici/openhospital-gui)
 # OpenHospital-gui
-OpenHospital 2.0 (ISF OpenHospital web version) - WIP
-
-**OpenHospital-core**
-You need the openhospital-core in order to run the gui.
-
-* clone [openhospital-core](https://github.com/informatici/openhospital-core)
-* follow the instructions in the related README.md
-
-**How to build with Maven:**
-_(requires Maven 3.2.5 or lesser installed and configured)_
-
-    mvn clean install
-    
-**How to create the DataBase**:
-
-You need a local (or remote) MySQL server where to run the script in mysql/db/ folder
-
-    create_all_en.sql
-	
-For remote MySQL server you need to change IP (localost) and PORT (3306) in rsc/applicationContext.properties:
-
-    <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/oh" />
+* docker from [pviotti](https://hub.docker.com/r/pviotti/openhospital) must be available
 
 **With docker compose**
 
-Simply run (it will run on localhost:3306):
+Simply run:
 
     docker-compose up 
 
-**How to launch the software**:
+**For Windows**:
 
-Use scripts startup.sh (Linux) or startup.cmd (Windows)
+Before running `docker-compose up`...
+
+Install and start [Xming Server](https://sourceforge.net/projects/xming/)
+Edit docker-compose.yml with `DISPLAY = <host_ip>:0` 
+
 
 **Other info**
 
